@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма опроса</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1 id="title" class="text-center">Форма опроса для freeCodeCamp</h1>
+        <p id="description" class="text-center description">Опрос для улучшения качества сервиса</p>
+    </header>
+    <form id="survey-form">
+        <div class="form-group">
+            <label for="name" id="name-label">Имя</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Введите ваше имя" required>
+        </div>
+        <div class="form-group">
+            <label for="email" id="email-label">Адрес электронной почты</label>
+            <input type="email" name="email" id="email" class="form-control"
+                   placeholder="Введите вашу электронную почту" required>
+        </div>
+        <div class="form-group">
+            <label for="number" id="number-label">Возраст
+                <span class="clue">(необязательно)</span>
+            </label>
+            <input type="number" name="age" id="number" min="10" max="99" class="form-control"
+                   placeholder="Ваш возраст">
+        </div>
+        <div class="form-group">
+            <p>Какой из вариантов лучше подходит к вам по описанию?</p>
+            <select name="role" id="dropdown" class="form-control" required>
+                <option disabled selected value>Выберите подходящий вариант</option>
+                <option value="student">Студент</option>
+                <option value="worker">Работаю</option>
+                <option value="learner">Учусь для переквалификации</option>
+                <option value="NoInfo">Не скажу :)</option>
+                <option value="other">Другое</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Посоветуете ли вы друзьям freeCodeCamp?</p>
+            <label>
+                <input type="radio" name="user-recommend" value="yes" class="input-radio" checked>Обязательно!
+            </label>
+            <label>
+                <input type="radio" name="user-recommend" value="maybe" class="input-radio">Возможно
+            </label>
+            <label>
+                <input type="radio" name="user-recommend" value="no" class="input-radio">Думаю нет!
+            </label>
+        </div>
+        <div class="form-group">
+            <p>Какая особенность вам понравилось больше всего в freeCodeCamp?</p>
+            <select name="bestfeature" id="most-like-feature" class="form-control" required>
+                <option disabled selected value>Выберите подходящий вариант</option>
+                <option value="challenges">Испытания</option>
+                <option value="projects">Проекты</option>
+                <option value="community">Сообщество</option>
+                <option value="openSource">Открытый исходный код</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Чтобы вы хотели изменить?
+                <span class="clue">(выберите подходящие варианты)</span>
+            </p>
+            <label>
+                <input type="checkbox" name="prefer" value="front-end-projects" class="input-checkbox">Front-end проекты
+            </label>
+            <label>
+                <input type="checkbox" name="prefer" value="back-end-projects" class="input-checkbox">Back-end проекты
+            </label>
+            <label>
+                <input type="checkbox" name="prefer" value="data-visual" class="input-checkbox">Визуализация данных
+            </label>
+            <label>
+                <input type="checkbox" name="prefer" value="challenges" class="input-checkbox">Испытания
+            </label>
+            <label>
+                <input type="checkbox" name="prefer" value="open-source-community" class="input-checkbox">OpenSource
+                сообщество
+            </label>
+            <label>
+                <input type="checkbox" name="prefer" value="git-help" class="input-checkbox">Помощь с GIT
+            </label>
+            <label>
+                <input type="checkbox" name="prefer" value="videos" class="input-checkbox">Видео
+            </label>
+            <label>
+                <input type="checkbox" name="prefer" value="city-meetups" class="input-checkbox">Городские встречи
+                сообщества
+            </label>
+            <label>
+                <input type="checkbox" name="prefer" value="wiki" class="input-checkbox">Наш справочник
+            </label>
+            <label>
+                <input type="checkbox" name="prefer" value="forum" class="input-checkbox">Наш форум
+            </label>
+            <label>
+                <input type="checkbox" name="prefer" value="additional-course" class="input-checkbox">Больше курсов
+            </label>
+
+        </div>
+        <div class="form-group">
+            <p>Ваши комментарии и предложения</p>
+            <textarea name="comment" id="comments" class="input-textarea"
+                      placeholder="Введите ваш комментарий тут..."></textarea>
+
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Разместить</button>
+        </div>
+    </form>
+
+
+</div>
+
+</body>
+</html>
